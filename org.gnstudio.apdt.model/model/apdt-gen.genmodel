@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.gnstudio.apdt.model/src"
+    modelPluginID="org.gnstudio.apdt.model" modelName="Apdt-gen" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>apdt-model.ecore</foreignModel>
+  <genPackages prefix="Model" basePackage="org.gnstudio.apdt" disposableProviderFactory="true"
+      ecorePackage="apdt-model.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="apdt-model.ecore#//AccessType">
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//AccessType/PUBLIC"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//AccessType/INTERNAL"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//AccessType/PROTECTED"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//AccessType/PRIVATE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="apdt-model.ecore#//DeclarationType">
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//DeclarationType/DEFAULT"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//DeclarationType/FINAL"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//DeclarationType/STATIC"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//DeclarationType/OVERRIDDEN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="apdt-model.ecore#//MethodType">
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//MethodType/STANDARD"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//MethodType/GETTER"/>
+      <genEnumLiterals ecoreEnumLiteral="apdt-model.ecore#//MethodType/SETTER"/>
+    </genEnums>
+    <genClasses ecoreClass="apdt-model.ecore#//Model">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Model/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Model/release"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Model/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//Model/programs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Model/encoding"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//Description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Description/text"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//Program">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Program/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//Program/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//Program/packages"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//PackageElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//PackageElement/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//PackageElement/interfaces"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//PackageElement/classes"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//TypeReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//TypeReference/name"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//InterfaceElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//InterfaceElement/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//InterfaceElement/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//InterfaceElement/access"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//InterfaceElement/extendsElements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//InterfaceElement/methods"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//ClassElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//ClassElement/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//ClassElement/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//ClassElement/access"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//ClassElement/annotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//ClassElement/final"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//ClassElement/dynamic"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//ClassElement/implementsElements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//ClassElement/extendsElements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//ClassElement/methods"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//Method">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Method/note"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//Method/annotation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//Method/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//Method/signature"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference apdt-model.ecore#//Method/returnType"/>
+    </genClasses>
+    <genClasses ecoreClass="apdt-model.ecore#//MethodSignature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//MethodSignature/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//MethodSignature/access"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//MethodSignature/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute apdt-model.ecore#//MethodSignature/declaration"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

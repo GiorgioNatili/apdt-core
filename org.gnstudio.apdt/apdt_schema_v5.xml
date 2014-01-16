@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+    Copyright (c) 2010, 2012 GNstudio s.r.l. and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the GNU Lesser General Public License v3.0
+    which accompanies this distribution, and is available at
+    http://www.gnu.org/licenses/gpl-3.0.html
+   
+    Contributors:
+      GNstudio s.r.l. - initial API and implementation
+ -->
+
+<apdt:model xmi:version="2.0" 
+            xmlns:xmi="http://www.omg.org/XMI" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns:apdt="http://www.com/gnstudio/apdt/">
+
+	<apdt:modelVersion major="2" minor="0" />
+	<apdt:releaseNumber major="2" minor="0" build="1" />
+
+	<apdt:program name="MyProgram">
+
+		<apdt:description>
+	          <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+		</apdt:description>
+
+		<apdt:entitiesPackage name="com.gnstudio.rikorda.core.managers.displaymanager">
+
+			<apdt:classBody name="DisplayManager" access="public|internal" 
+			                final="true|false" dynamic="true|false" 
+			                annotation="the string @ [Event='com.gnstudio.test.' ) for annotation">
+				
+				<apdt:description>
+					<![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+				</apdt:description>
+
+				<apdt:extends>
+					<apdt:reference value="DisplayManager" />
+					<apdt:reference value="DisplayManager" />
+				</apdt:extends>
+
+				<apdt:implements>
+					<apdt:reference value="DisplayManager" />
+					<apdt:reference value="DisplayManager" />
+				</apdt:implements>
+
+				<apdt:attributes>
+					<apdt:member name="theMemberName" isConstant="true|false" type="datatype" 
+					             access="public|private|protected|internal" 
+					             isOverriden="true|false" isStatic="true|false" 
+					             annotation="the string @ [Event='com.gnstudio.test.' ) for annotation">
+						<apdt:description>
+                            <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+						</apdt:description>
+					</apdt:member>
+					<apdt:member name="theMemberName" isConstant="true|false" type="datatype" 
+					             access="public|private|protected|internal" 
+					             isOverriden="true|false" isStatic="true|false" 
+					             annotation="the string @ [Event='com.gnstudio.test.' ) for annotation">
+						<apdt:description>
+                            <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+						</apdt:description>
+					</apdt:member>
+				</apdt:attributes>
+
+				<apdt:method annotation="the string @ [Event='com.gnstudio.test.' ) for annotation">
+				
+					<apdt:description>
+                        <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+					</apdt:description>
+					
+					<apdt:signature name="theNameOfTheMethod" type="constructor|getter|setter|standard" 
+					                access="public|private|protected|internal" isOverriden="true|false" 
+					                isStatic="true|false" isFinal="true|false">
+						<apdt:arguments>
+							<apdt:argument name="theNameOfTheArgument" defaultValue="default value" 
+							               type="datatype" varargs="true|false" />
+							<apdt:argument name="theNameOfTheArgument" defaultValue="default value" 
+										   type="datatype" varargs="true|false" />
+							<apdt:argument name="theNameOfTheArgument" defaultValue="default value" 
+										   type="datatype" varargs="true|false" />
+						</apdt:arguments>
+						<apdt:returnType type="datatype" />
+						<apdt:throwType type="datatype" />
+					</apdt:signature>
+					
+					<!--
+						Sequence should not be added manually in the method but it's an
+						element NOT visible in the UI in which all the elements of the
+						method body should live (please correct me if I'm wrong!)
+					-->
+					<apdt:sequence>
+					
+						<apdt:variable name="theVariableName" type="datatype" value="the value">
+							<apdt:description>
+                              <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+						</apdt:variable>
+
+						<apdt:constant name="theConstantName" type="datatype" value="the value">
+							<apdt:description>
+                              <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+						</apdt:constant>
+
+						<apdt:comment>
+                            <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+						</apdt:comment>
+
+						<apdt:iteration type="for|for each--in|for..in|while|do..while">
+							<apdt:description>
+                                <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+							<!-- All the method body items can be added here -->
+						</apdt:iteration>
+
+						<apdt:ifStatement>
+							<apdt:description>
+                                <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+							<!-- All the method body items can be added here -->
+							<apdt:elseIfStatement>
+								<apdt:description>
+                                    <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+								</apdt:description>
+								<!-- All the method body items can be added here -->
+							</apdt:elseIfStatement>
+							<apdt:elseStatment>
+								<apdt:description>
+                                    <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+								</apdt:description>
+								<!-- All the method body items can be added here -->
+							</apdt:elseStatment>
+						</apdt:ifStatement>
+
+						<apdt:switchStatement>
+							<apdt:description>
+                                <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+							<!-- Only one could be final and only the last one should be default -->
+							<apdt:switchCase isDefault="true|false">
+								<apdt:description>
+                                    <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+								</apdt:description>
+								<!-- All the method body items can be added here -->
+							</apdt:switchCase>
+						</apdt:switchStatement>
+
+						<apdt:tryStatement>
+							<apdt:description>
+                                <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+							<!-- All the method body items can be added here -->
+							<apdt:catchStatement>
+								<apdt:description>
+                                    <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+								</apdt:description>
+								<!-- All the method body items can be added here -->
+							</apdt:catchStatement>
+							<apdt:finallyStatment>
+								<apdt:description>
+                                    <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+								</apdt:description>
+								<!-- All the method body items can be added here -->
+							</apdt:finallyStatment>
+						</apdt:tryStatement>
+
+						<apdt:recursion>
+							<apdt:description>
+                                <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+						</apdt:recursion>
+
+						<apdt:call method="nameOfTheMethodToCall">
+							<apdt:description>
+                                <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+							</apdt:description>
+							<apdt:arguments>
+								<apdt:description>
+									<![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+								</apdt:description>
+							</apdt:arguments>
+						</apdt:call>
+						
+						<!-- chanhes added the 8th of February 2011 -->
+						
+						<apdt:variable name="age" type="int" value="">
+							<apdt:description>
+								<![CDATA[INIT a variable to store the user age]]>
+							</apdt:description>
+						</apdt:variable>
+						<apdt:read from = "the server side method we have">
+							<apdt:description>
+								<![CDATA[READ the age of the user]]>
+							</apdt:description>							
+						</apdt:read>
+						<apdt:store>
+							<apdt:description>
+								<![CDATA[STORE the result into the age variable]]>
+							</apdt:description>	
+						</apdt:store>
+						
+						<apdt:recover>
+							<apdt:description>
+								<![CDATA[RECOVER the age limit by which user are not allowed to enter the web site]]>
+							</apdt:description>								
+						</apdt:recover>
+						
+						<apdt:ifStatement>
+							<apdt:description>
+								<![CDATA[The user age is > recovered limit]]>
+							</apdt:description>
+							<apdt:recover>
+								<apdt:description>
+									<![CDATA[RECOVER the user remaining credit]]>
+								</apdt:description>								
+							</apdt:recover>
+							<apdt:elseStatment>
+								<apdt:description>
+									<![CDATA[]]>
+								</apdt:description>
+								<apdt:prompt>
+									<apdt:description>
+										<![CDATA[PROMPT the error message]]>
+									</apdt:description>									
+								</apdt:prompt>
+								<apdt:return>
+									<apdt:description>
+										<![CDATA[Stop the execution of the method]]>
+									</apdt:description>	
+								</apdt:return>
+							</apdt:elseStatment>
+						</apdt:ifStatement>		
+						
+						<apdt:calculateAndStore>
+							<apdt:description>
+								<![CDATA[CALCULATE and STORE the cost of the live event]]>
+							</apdt:description>	
+						</apdt:calculateAndStore>
+						<apdt:write to = "server side container">
+							<apdt:description>
+								<![CDATA[WRITE the information remotely to avoid to keep logic into the client]]>
+							</apdt:description>	
+						</apdt:write>
+						
+						<apdt:print>
+							<apdt:description>
+								<![CDATA[PRINT "welcome aboard dude!!!!"]]>
+							</apdt:description>	
+						</apdt:print>
+						
+					</apdt:sequence>
+					
+				</apdt:method>
+
+			</apdt:classBody>
+
+			<apdt:contractBody name="DisplayManager" access="public|internal">
+				
+				<apdt:description>
+					<![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+				</apdt:description>
+
+				<apdt:extends>
+					<apdt:reference value="DisplayManager" />
+					<apdt:reference value="DisplayManager" />
+				</apdt:extends>
+
+				<apdt:method annotation="the string @ [Event='com.gnstudio.test.' ) for annotation">
+					<apdt:description>
+                        <![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo arcu. Nunc feugiat, nunc.]]>
+					</apdt:description>
+					<apdt:signature name="theNameOfTheMethod" type="getter|setter|standard" access="public" 
+					                isOverriden="false" isStatic="false" isFinal="false">
+						<apdt:arguments>
+							<apdt:argument name="theNameOfTheArgument" defaultValue="default value" 
+							               type="datatype" varargs="true|false" />
+							<apdt:argument name="theNameOfTheArgument" defaultValue="default value" 
+							               type="datatype" varargs="true|false" />
+							<apdt:argument name="theNameOfTheArgument" defaultValue="default value" 
+							               type="datatype" varargs="true|false" />
+						</apdt:arguments>
+						<apdt:returnType type="datatype" />
+						<apdt:throws >
+							<apdt:throwType type="dataType" />
+							<apdt:throwType type="dataType" />
+						</apdt:throws>
+					</apdt:signature>
+				</apdt:method>
+				
+			</apdt:contractBody>
+
+		</apdt:entitiesPackage>
+
+		<apdt:entitiesPackage name="com.gnstudio.rikorda.core.managers.graphics">
+		</apdt:entitiesPackage>
+
+	</apdt:program>
+
+</apdt:model>

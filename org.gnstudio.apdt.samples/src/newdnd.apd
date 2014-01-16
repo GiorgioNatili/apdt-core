@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apdt:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apdt="http:///org/gnstudio/apdt/model.ecore" release="0.0.3" encoding="UTF-8">
+  <sequences xsi:type="apdt:SequenceGroup">
+    <sequences xsi:type="apdt:Variable" name="1"/>
+    <sequences xsi:type="apdt:Variable" name="2"/>
+    <sequences xsi:type="apdt:MethodCall"/>
+    <sequences xsi:type="apdt:Variable" name="3"/>
+  </sequences>
+  <sequences xsi:type="apdt:Variable"/>
+</apdt:Model>

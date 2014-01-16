@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apdt:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apdt="http:///org/gnstudio/apdt/model.ecore" release="0.0.3" encoding="UTF-8">
+  <sequences xsi:type="apdt:Variable" name="user">
+    <type name="int"/>
+  </sequences>
+  <sequences xsi:type="apdt:Comment" text="read user name "/>
+  <sequences xsi:type="apdt:Variable" name="password">
+    <type name="char[]"/>
+  </sequences>
+  <sequences xsi:type="apdt:Comment" text="read password&#xD;&#xA;(wait for user password)"/>
+  <sequences xsi:type="apdt:ControlSequence">
+    <ifGroup name="if both user + password  not null">
+      <description/>
+      <sequences xsi:type="apdt:MethodCall" name="login" arguments="user, password"/>
+      <sequences xsi:type="apdt:Print" text="user name:  {user}"/>
+      <sequences xsi:type="apdt:Write" text="login time to server "/>
+      <sequences xsi:type="apdt:TrySequence">
+        <tryGroup name="read notifications">
+          <sequences xsi:type="apdt:Read" text="read user notifications from server"/>
+          <sequences xsi:type="apdt:Recover" text="user id"/>
+        </tryGroup>
+        <catchGroups name="IOException">
+          <sequences xsi:type="apdt:Print" text="read notifications failed!"/>
+        </catchGroups>
+      </sequences>
+    </ifGroup>
+    <elseifGroups name="user  = null">
+      <description text="ask user to re-enter"/>
+    </elseifGroups>
+    <elseifGroups name="password = null">
+      <description text="ask pssword re-enter"/>
+    </elseifGroups>
+  </sequences>
+</apdt:Model>

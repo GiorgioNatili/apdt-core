@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apdt:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apdt="http:///org/gnstudio/apdt/model.ecore" release="1.1.0" encoding="UTF-8">
+  <sequences xsi:type="apdt:SequenceGroup">
+    <description/>
+    <sequences xsi:type="apdt:Variable" name="var1"/>
+    <sequences xsi:type="apdt:ControlSequence">
+      <ifGroup>
+        <sequences xsi:type="apdt:Variable"/>
+      </ifGroup>
+      <elseifGroups/>
+      <elseGroup/>
+    </sequences>
+    <sequences xsi:type="apdt:Comment" text="next2"/>
+    <sequences xsi:type="apdt:Variable"/>
+    <sequences xsi:type="apdt:Variable" name="var3"/>
+    <sequences xsi:type="apdt:Variable" note="keek id" name="_var9" value="0">
+      <type name="TEST"/>
+    </sequences>
+  </sequences>
+  <sequences xsi:type="apdt:Variable"/>
+  <sequences xsi:type="apdt:ControlSequence">
+    <ifGroup/>
+    <elseifGroups>
+      <sequences xsi:type="apdt:Comment"/>
+    </elseifGroups>
+    <elseGroup/>
+  </sequences>
+  <sequences xsi:type="apdt:SwitchSequence">
+    <description/>
+    <cases/>
+  </sequences>
+</apdt:Model>

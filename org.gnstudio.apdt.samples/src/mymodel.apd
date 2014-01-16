@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apdt:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apdt="http:///org/gnstudio/apdt/model.ecore" release="0.0.3" encoding="UTF-8">
+  <programs name="App">
+    <packages name="Appa">
+      <interfaces name="APP">
+        <description/>
+        <extendsElements/>
+      </interfaces>
+      <classes name="APPImpl">
+        <description/>
+        <implementsElements name="Appa.APP"/>
+        <extendsElements name="mx.core.ClassFactory"/>
+        <members>
+          <type name="Appa.APP"/>
+        </members>
+      </classes>
+    </packages>
+    <packages name="com.gnstudio.ui">
+      <classes name="TEST">
+        <discussions text="this is ok " author="anuradha-dev"/>
+        <discussions author="anuradha-dev"/>
+        <methods note="check sequence impl">
+          <sequences xsi:type="apdt:Comment" text="todo: init some sequences to final variable "/>
+          <sequences xsi:type="apdt:Variable" declaration="FINAL" name="localApp" value="_app">
+            <type name="Appa.APP"/>
+          </sequences>
+          <sequences xsi:type="apdt:Variable"/>
+          <sequences xsi:type="apdt:Comment"/>
+          <sequences xsi:type="apdt:MethodCall" name="isNull"/>
+          <signature name="testSequency">
+            <returnType name="com.gnstudio.ui.TEST"/>
+          </signature>
+          <arguments name="_app">
+            <type name="Appa.APP"/>
+          </arguments>
+        </methods>
+        <methods>
+          <sequences xsi:type="apdt:MethodReturn" note="is test fail or not"/>
+          <sequences xsi:type="apdt:TrySequence">
+            <tryGroup/>
+            <catchGroups/>
+          </sequences>
+          <signature name="test">
+            <returnType name="boolean"/>
+          </signature>
+        </methods>
+      </classes>
+    </packages>
+    <packages name="com.gnstudio.app"/>
+    <packages name="com.gnstudio.app"/>
+  </programs>
+</apdt:Model>

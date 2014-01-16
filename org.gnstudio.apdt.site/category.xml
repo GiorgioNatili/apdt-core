@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="http://gnstudio.com">
+      GNstudio Features
+   </description>
+   <feature url="features/org.gnstudio.apdt.feature_1.1.0.qualifier.jar" id="org.gnstudio.apdt.feature" version="1.1.0.qualifier">
+      <category name="GNstudio Features"/>
+   </feature>
+   <feature url="features/org.gnstudio.apdt.java.feature_1.1.0.qualifier.jar" id="org.gnstudio.apdt.java.feature" version="1.1.0.qualifier">
+      <category name="GNstudio Features"/>
+   </feature>
+   <feature url="features/org.gnstudio.apdt.flex.feature_1.1.0.qualifier.jar" id="org.gnstudio.apdt.flex.feature" version="1.1.0.qualifier">
+      <category name="GNstudio Features"/>
+   </feature>
+   <feature url="features/org.gnstudio.apdt.fdt.feature_1.1.0.qualifier.jar" id="org.gnstudio.apdt.fdt.feature" version="1.1.0.qualifier">
+      <category name="GNstudio Features"/>
+   </feature>
+   <category-def name="GNstudio Features" label="GNstudio Features"/>
+</site>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apdt:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apdt="http:///org/gnstudio/apdt/model.ecore" release="1.1.0" encoding="UTF-8">
+  <sequences xsi:type="apdt:Variable" declaration="FINAL" name="items">
+    <type name="int [] "/>
+  </sequences>
+  <sequences xsi:type="apdt:Comment" text="count items"/>
+  <sequences xsi:type="apdt:Print" text="load items"/>
+  <sequences xsi:type="apdt:SequenceGroup" name="lock items and load">
+    <sequences xsi:type="apdt:Variable" declaration="FINAL" name="LOCK" value="new Object()">
+      <type name="Object"/>
+    </sequences>
+    <sequences xsi:type="apdt:Recursion"/>
+    <sequences xsi:type="apdt:MethodCall" name="loadItems" arguments="LOCK">
+      <description text="use the LOCK and load Items"/>
+    </sequences>
+    <sequences xsi:type="apdt:MethodReturn" note="return if fail "/>
+  </sequences>
+  <sequences xsi:type="apdt:Variable" name="_index">
+    <description text="keep item count "/>
+    <type name="int"/>
+  </sequences>
+  <sequences xsi:type="apdt:Variable" name="result">
+    <description text="keep return result here "/>
+    <type name="int []"/>
+  </sequences>
+  <sequences xsi:type="apdt:Iteration" type="for-each">
+    <description text="loop items "/>
+    <sequences xsi:type="apdt:Variable" name="_item"/>
+    <sequences xsi:type="apdt:Variable"/>
+    <sequences xsi:type="apdt:MethodCall" name="validate" arguments="_item, LOCK">
+      <description text="check is item active"/>
+    </sequences>
+    <sequences xsi:type="apdt:MethodReturn" note="is active ore not"/>
+  </sequences>
+  <sequences xsi:type="apdt:SwitchSequence">
+    <description text="type grouping "/>
+    <cases name="type = 1"/>
+    <cases name="type = 2"/>
+    <cases name="type = 3"/>
+    <cases name="type = 4"/>
+    <defaultCase name="fallback">
+      <sequences xsi:type="apdt:Variable"/>
+    </defaultCase>
+  </sequences>
+</apdt:Model>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apdt:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apdt="http:///org/gnstudio/apdt/model.ecore" release="1.1.0" encoding="UTF-8">
+  <classElement name="App">
+    <description/>
+    <methods note="test1">
+      <signature/>
+    </methods>
+    <methods note="test2">
+      <sequences xsi:type="apdt:Variable"/>
+      <signature/>
+    </methods>
+    <members note="test"/>
+  </classElement>
+</apdt:Model>

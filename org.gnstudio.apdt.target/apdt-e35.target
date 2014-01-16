@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="apdt-e35">
+<locations>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.eclipse.sdk.ide" version="3.5.2.M20100211-1343"/>
+<repository location="http://download.eclipse.org/eclipse/updates/3.5"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.eclipse.acceleo.runtime.feature.group" version="3.0.3.v20110302-0402"/>
+<repository location="http://download.eclipse.org/modeling/m2t/acceleo/updates/releases/3.0"/>
+</location>
+</locations>
+</target>

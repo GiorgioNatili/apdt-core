@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2010, 2012 GNstudio s.r.l. and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the GNU Lesser General Public License v3.0
+    which accompanies this distribution, and is available at
+    http://www.gnu.org/licenses/gpl-3.0.html
+   
+    Contributors:
+      GNstudio s.r.l. - initial API and implementation
+ -->
+<feature
+      id="org.gnstudio.apdt.site"
+      label="GNstudio PDT Eclipse Update Site"
+      version="1.1.0.qualifier"
+      provider-name="GNstudio s.r.l.">
+
+   <includes
+         id="org.gnstudio.apdt.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.gnstudio.apdt.java.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.gnstudio.apdt.flex.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.gnstudio.apdt.fdt.feature"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.emf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecore.xmi"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
